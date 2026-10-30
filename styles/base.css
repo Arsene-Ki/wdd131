@@ -49,6 +49,7 @@ h1 {
     gap: 16px;
 }
 .card {
+    overflow: hidden;
     border: 1px solid #c9d1d9;
     border-radius: 5px;
     background-color: white;
@@ -67,7 +68,16 @@ h2 {
     padding: 15px;
 }
 .about img {
-    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    width: 150px;
+    height: 150px;
+    transform: rotate(90deg);
+    object-fit: cover;
+}
+.about p {
+    grid-column: 1;
+    grid-row: 1;
 }
 .country {
     margin: 0 15px 15px;
@@ -123,6 +133,15 @@ footer {
     }
     .about {
         grid-template-columns: 1fr;
+    }
+    .about img {
+        grid-column: 1;
+        grid-row: 1;
+        margin-left: 0;
+    }
+    .about p {
+        grid-column: 1;
+        grid-row: 2;
     }
     .country figure {
         float: none;
