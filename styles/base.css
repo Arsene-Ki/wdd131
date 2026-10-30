@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    background-color: #f4f1ea;
+    color: #1f2933;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+}
+#course-title {
+    display: block;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    background-color: #0d2336;
+    list-style-type: none;
+}
+nav a {
+    display: block;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #f0b429;
+    color: #0d2336;
+}
+main {
+    width: 92%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+h1 {
+    color: #17324d;
+    text-align: center;
+}
+.layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+}
+.card {
+    border: 1px solid #c9d1d9;
+    border-radius: 5px;
+    background-color: white;
+}
+h2 {
+    margin: 0;
+    padding: 10px;
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+}
+.about {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    gap: 15px;
+    padding: 15px;
+}
+.about img {
+    width: 100%;
+}
+.country {
+    margin: 0 15px 15px;
+    border-top: 1px solid #cccccc;
+    text-align: center;
+}
+.country h3 {
+    color: #17324d;
+}
+.country figure {
+    float: left;
+    width: 150px;
+    margin: 0 15px 10px 0;
+}
+.country figure img {
+    width: 100%;
+}
+.country figcaption {
+    color: #666666;
+    font-size: 14px;
+}
+.country p {
+    text-align: left;
+}
+.resources ul {
+    padding-left: 30px;
+    margin:5px;
+}
+
+.resources {
+    height: 100%;
+}
+
+.resources a {
+    color: #17324d;
+}
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+}
+#lastModified {
+    color: #f0b429;
+}
+@media screen and (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .layout {
+        grid-template-columns: 1fr;
+    }
+    .about {
+        grid-template-columns: 1fr;
+    }
+    .country figure {
+        float: none;
+        margin: 0 auto;
+    }
+}
