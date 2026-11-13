@@ -1,0 +1,138 @@
+/* Global variables: Tanzania flag colors */
+:root {
+    --green: #1eb53a;
+    --green-dark: #0b5d1e;
+    --yellow: #fcd116;
+    --blue-dark: #00587a;
+    --black: #111111;
+    --white: #ffffff;
+    --cream: #fff9e0;
+    --heading-font: Verdana, Arial, sans-serif;
+    --body-font: Georgia, "Times New Roman", serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    line-height: 1.6;
+    color: var(--black);
+    background-color: var(--cream);
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 0.3rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header */
+header {
+    background-color: var(--green-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 6px solid var(--yellow);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Cards */
+.data,
+.weather {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.data {
+    background-color: var(--white);
+    border-left: 8px solid var(--green);
+}
+
+.data h2 {
+    color: var(--green-dark);
+}
+
+.weather {
+    position: relative;
+    background-color: var(--blue-dark);
+    color: var(--white);
+    border-left: 8px solid var(--yellow);
+}
+
+.weather h2 {
+    color: var(--yellow);
+}
+
+/* SVG weather icon (mobile view) */
+.weather-icon {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+/* Wider view */
+@media (min-width: 700px) {
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    main {
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: 340px;
+        margin: 0;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        width: 300px;
+        margin: 0;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    /* Pseudo-element weather icon after the heading */
+    .weather h2::after {
+        content: " \26C5";
+    }
+}

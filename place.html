@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Tanzania: home of Mount Kilimanjaro, the Serengeti and Zanzibar.">
+    <title>Tanzania | Place Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tanzania</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 700px)" srcset="images/tanzania-large.webp">
+                <img src="images/tanzania-large.webp"
+                     alt="Mount Kilimanjaro above the Tanzanian savanna at sunset"
+                     width="800" height="560">
+            </picture>
+        </section>
+
+        <section class="data">
+            <h2>Tanzania Data</h2>
+            <ul>
+                <li><strong>Capital:</strong> Dodoma</li>
+                <li><strong>Largest City:</strong> Dar es Salaam</li>
+                <li><strong>Population:</strong> about 67 million</li>
+                <li><strong>Area:</strong> 945,087 km&sup2;</li>
+                <li><strong>Languages:</strong> Swahili and English</li>
+                <li><strong>Currency:</strong> Tanzanian shilling (TZS)</li>
+                <li><strong>Highest Point:</strong> Mount Kilimanjaro, 5,895 m</li>
+                <li><strong>Famous For:</strong> Serengeti, Zanzibar, Ngorongoro Crater and for the great and only mount Kilimanjaro</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img class="weather-icon" src="images/weather.svg" alt="Partly cloudy" width="64" height="64">
+            <ul>
+                <li><strong>Temperature:</strong> 24&deg;C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> 12 km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Tanzania Page | Arsene Kitemba</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
