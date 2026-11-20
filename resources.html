@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keys &amp; Keystrokes | Resources &amp; Contact</title>
+  <link rel="stylesheet" href="week04/style/styles.css">
+  <script src="week04/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container header-row">
+      <div>
+        <p class="site-title"><a href="index.html">Keys &amp; Keystrokes</a></p>
+        <p class="tagline">Beginner Piano Guide &amp; Practice Notes</p>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="basics.html">Learn the Basics</a></li>
+          <li><a href="practices.html">Practice Tools</a></li>
+          <li><a href="resources.html" class="active">Resources &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Resources &amp; Contact</h1>
+    <p class="subtitle">
+      Recommended beginner songs, method books, and practice apps—plus a form to ask a question or suggest a song.
+    </p>
+
+    <section>
+      <h2>Recommended Beginner Songs</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Song</th>
+              <th>Level</th>
+              <th>Why It&rsquo;s Good for Beginners</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Mary Had a Little Lamb</strong> (Traditional)</td>
+              <td>Week 1</td>
+              <td>Uses only three white keys (E, D, C) with simple stepwise motion.</td>
+            </tr>
+            <tr>
+              <td><strong>Ode to Joy</strong> (Beethoven)</td>
+              <td>Early Beginner</td>
+              <td>Fits in a five-finger right-hand position and sounds great right away.</td>
+            </tr>
+            <tr>
+              <td><strong>Minuet in G Major</strong> (Christian Petzold)</td>
+              <td>Late Beginner</td>
+              <td>A classic 3/4 piece from the Anna Magdalena Bach notebook for hand independence.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="two-columns">
+      <div class="main-column">
+        <h2>Helpful Books</h2>
+        <ul>
+          <li><strong>Faber Adult Piano Adventures All-in-One, Book 1</strong> &mdash; Clear step-by-step lessons, theory, and classical/popular pieces.</li>
+          <li><strong>Alfred&rsquo;s Basic Adult All-in-One Course, Book 1</strong> &mdash; Introduces left-hand chords early with familiar melodies.</li>
+        </ul>
+      </div>
+      <div class="side-column">
+        <h2>Useful Apps &amp; Sites</h2>
+        <ul>
+          <li><strong>musictheory.net / Tenuto</strong> &mdash; Free web drills for reading notes and intervals.</li>
+          <li><strong>flowkey</strong> &mdash; Split-screen sheet music and real pianist hand videos.</li>
+          <li><strong>Piano Marvel</strong> &mdash; Great for sight-reading practice and structured lessons.</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2>My Contact Information</h2>
+      <div class="note-box">
+        <p class="box-label">Direct Contact</p>
+        <p>
+          <strong>Name:</strong> Your Full Name<br>
+          <strong>Email:</strong> <a href="mailto:ngoyk@example.com">ngoyk@example.com</a><br>
+          <strong>Phone:</strong> <a href="tel:+255797591824">+255 797 591 824</a><br>
+          <strong>Location:</strong> Arusha, Tanzania
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2>Ask a Question or Suggest a Song</h2>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="visitor-name">Your Name</label>
+          <input type="text" id="visitor-name" name="visitorName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="visitor-email">Email Address</label>
+          <input type="email" id="visitor-email" name="visitorEmail" required>
+        </div>
+
+        <div class="form-group">
+          <label for="visitor-topic">Topic</label>
+          <select id="visitor-topic" name="visitorTopic">
+            <option value="question">Question about a piano lesson</option>
+            <option value="song">Suggest a beginner song</option>
+            <option value="resource">Recommend a book or app</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="visitor-message">Message or Song Suggestion</label>
+          <textarea id="visitor-message" name="visitorMessage" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+
+        <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Keys &amp; Keystrokes &mdash; Resources &amp; Contact</p>
+    </div>
+  </footer>
+</body>
+</html>

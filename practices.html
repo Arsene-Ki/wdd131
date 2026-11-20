@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keys &amp; Keystrokes | Practice Tools</title>
+  <link rel="stylesheet" href="week04/style/styles.css">
+  <script src="week04/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container header-row">
+      <div>
+        <p class="site-title"><a href="index.html">Keys &amp; Keystrokes</a></p>
+        <p class="tagline">Beginner Piano Guide &amp; Practice Notes</p>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="basics.html">Learn the Basics</a></li>
+          <li><a href="practices.html" class="active">Practice Tools</a></li>
+          <li><a href="resources.html">Resources &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Practice Tools</h1>
+    <p class="subtitle">
+      Click any key below to see its note name and hear its pitch, then use the timer to track your practice session.
+    </p>
+
+    <section>
+      <h2>Interactive One-Octave Piano (C4 to C5)</h2>
+      <div class="note-readout" id="note-readout" aria-live="polite">
+        Click a piano key to see the note name
+      </div>
+
+      <div class="piano" role="group" aria-label="Playable one-octave piano keyboard">
+        <!-- 8 White Keys -->
+        <button type="button" class="white-key piano-key" data-note="C4" aria-label="C4">C4</button>
+        <button type="button" class="white-key piano-key" data-note="D4" aria-label="D4">D4</button>
+        <button type="button" class="white-key piano-key" data-note="E4" aria-label="E4">E4</button>
+        <button type="button" class="white-key piano-key" data-note="F4" aria-label="F4">F4</button>
+        <button type="button" class="white-key piano-key" data-note="G4" aria-label="G4">G4</button>
+        <button type="button" class="white-key piano-key" data-note="A4" aria-label="A4">A4</button>
+        <button type="button" class="white-key piano-key" data-note="B4" aria-label="B4">B4</button>
+        <button type="button" class="white-key piano-key" data-note="C5" aria-label="C5">C5</button>
+
+        <!-- 5 Black Keys -->
+        <button type="button" class="black-key key-cs piano-key" data-note="C#4" aria-label="C sharp 4">C&#9839;</button>
+        <button type="button" class="black-key key-ds piano-key" data-note="D#4" aria-label="D sharp 4">D&#9839;</button>
+        <button type="button" class="black-key key-fs piano-key" data-note="F#4" aria-label="F sharp 4">F&#9839;</button>
+        <button type="button" class="black-key key-gs piano-key" data-note="G#4" aria-label="G sharp 4">G&#9839;</button>
+        <button type="button" class="black-key key-as piano-key" data-note="A#4" aria-label="A sharp 4">A&#9839;</button>
+      </div>
+    </section>
+
+    <section class="two-columns">
+      <div class="main-column note-box">
+        <p class="box-label">Practice Session Timer</p>
+        <p class="timer-display" id="timer-display">00:00</p>
+        <div class="timer-buttons">
+          <button type="button" class="btn" id="start-timer-btn">Start</button>
+          <button type="button" class="btn btn-secondary" id="pause-timer-btn">Pause</button>
+          <button type="button" class="btn btn-secondary" id="reset-timer-btn">Reset</button>
+        </div>
+        <p id="timer-status" aria-live="polite">Timer ready.</p>
+      </div>
+
+      <div class="side-column">
+        <h3>Quick 10-Minute Routine</h3>
+        <ol>
+          <li><strong>2 min:</strong> Play the C major scale slowly with each hand.</li>
+          <li><strong>3 min:</strong> Practice switching between C, F, and G chords.</li>
+          <li><strong>5 min:</strong> Work on one short section of a song you enjoy.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Keys &amp; Keystrokes &mdash; Practice Tools</p>
+    </div>
+  </footer>
+</body>
+</html>
