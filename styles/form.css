@@ -2,6 +2,7 @@
   --navy: #1b2a41;
   --sky: #eef3f7;
   --gold: #b07d00;
+  --gold-dark: #8f6400;
   --star: #f2c14e;
   --ink: #1a1a1a;
   --white: #ffffff;
@@ -99,7 +100,7 @@ legend {
 }
 
 .req {
-  color: var(--gold);
+  color: var(--gold-dark);
 }
 
 select,
