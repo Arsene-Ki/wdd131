@@ -112,6 +112,10 @@ footer {
   background-color: var(--ink);
 }
 
+.dot-white {
+  background-color: var(--white);
+}
+
 /* Typography */
 .specimens {
   display: grid;
